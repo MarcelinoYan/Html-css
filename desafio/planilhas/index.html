@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Planilhas</title>
+  <style>
+    /* Estilos para o corpo da página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para o cabeçalho */
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Estilos para o conteúdo principal */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para os links */
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Estilos para o menu */
+    .menu {
+      display: none;
+      padding: 20px;
+      background-color: #f4f4f4;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin-bottom: 10px;
+    }
+
+    .menu li:last-child {
+      margin-bottom: 0;
+    }
+
+    .menu a {
+      color: #333;
+    }
+
+    .show-menu {
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Página de Planilhas</h1>
+  </header>
+
+  <main>
+    <h2>Planilhas Disponíveis:</h2>
+    <button id="menu-toggle" onclick="toggleMenu()">Abrir Menu</button>
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="caminho_para_sua_planilha_1">Planilha 1</a></li>
+        <li><a href="caminho_para_sua_planilha_2">Planilha 2</a></li>
+        <li><a href="caminho_para_sua_planilha_3">Planilha 3</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('show-menu');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600&family=Sriracha&display=swap');
+
+@charset "utf-8";
+
+/*
+	font-family: catamaran;
+	#23232C - cinza
+	#EA6625 - Laranja
+	#1E8C69 - verde
+*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*CABEÇA DA PAGINA*/
+
+body {
+	position: relative;
+	background: white url(../imagens/img4.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+header {
+	position: sticky;
+	top: -0px;
+	padding: 10px;
+	background-color: #23232c;
+}
+
+header > h1 {
+	display: inline-block;
+	color: white;
+}
+
+header > img {
+	display: inline-block;
+	height: 50px;
+}
+
+header > nav {
+	display: inline-block;
+	margin-left: 300px;
+}
+
+header > nav > p {
+	display: inline-block;
+	font-size: 24px;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+	padding: 2px;
+	margin: 0px 60px 0px 0px;
+}
+
+header a:hover {
+	color: #1E8C69;
+}
+
+/*CORPO DA PAGINA*/
+
+main {
+	border-radius: 10px;
+	margin: 10px auto;
+	margin-bottom: 0px;
+	width: 850px;
+	background-color: #23232C;
+}
+
+section img {
+	display: block;
+	margin: auto;
+	height: 85px;
+	width: 85px;
+	border-radius: 200px;
+	border: 2px solid #494949;
+}
+
+section > div {
+	display: inline-block;
+	margin: 10px 15px;
+	color: white;
+	width: 250px;
+}
+
+section > div > h1 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+section a {
+	display: inline-block;
+	width: 235px;
+	text-decoration: none;
+	color: white;
+	background-color: #494949;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+section a:hover {
+	background-color: #23232C;
+	border: 1px solid #494949;
+	color: #1E8C69;
+	width: 220px;
+	transition: background-color 0.5s;
+}
+
+section a:active {
+	background-color: #494949;
+	color: white;
+}
+
+section ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+section li {
+	margin-bottom: 2px;
+}
+
+/*RODAPÉ DA PAGINA*/
+
+footer {
+	position: absolute;
+	bottom: 0%;
+	background-color: #23232c;
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin: 0px 0px;
+}
+

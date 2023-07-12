@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>color, file e range</title>
+</head>
+<body>
+	<form method="post" action="php/cadastro.php">
+		<p>
+			<label for="icor">Selecione a cor:</label>
+			<input type="color" name="cor" id="icor" value="#ffff00">
+		</p>
+		<p>
+			<label for="inivel">De uma nota:</label>
+			<input type="range" name="nivel" id="inivel" max="5" min="1" value="5">
+		</p>
+		<p>
+			<label for="ifoto">Adicione uma foto:</label>
+			<input type="file" name="foto" id="ifoto">
+		</p>
+		<p>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+		</p>
+
+	</form>
+</body>
+</html>

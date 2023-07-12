@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: monospace, sans-serif;
+	position: relative;
+}
+
+header {
+	background-color: black;
+	color: white;
+	height: 15vh;
+	text-align: center;
+}
+
+header > h1 {
+	padding-top: 10px;
+	font-size: 60px;
+	font-variant: small-caps;
+}
+
+table {
+	position: absolute;
+	margin-top: 10px;
+	border-collapse: collapse;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+caption {
+	font-size: 25px;
+	border: 2px solid black;
+	font-weight: bolder;
+}
+
+thead > tr > th {
+	position: sticky;
+	top: -1px;
+	background-color: lightgray;
+}
+
+tbody > tr:nth-child(odd) {
+	background-color: limegreen;
+}
+
+ td, th {
+	border: 2px solid black;
+	padding: 3px;
+	text-align: center;
+	width: 100px;
+}
+
+caption,th {
+	background-color: lightgray;
+}
+
+ td.n {
+	text-align: right;
+}

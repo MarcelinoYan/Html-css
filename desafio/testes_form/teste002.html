@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+		* {
+			font-family: monospace;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body{
+			background-color: #000000;
+			position: relative;
+			height: 100vh;
+			width: 100vw;
+		}
+
+		h1 {
+			padding-top: 200px;
+			text-align: center;
+			color: #975bff;
+		}
+
+		form {
+			background-color: #975bff;
+			padding: 30px;
+			border-radius: 30px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		input {
+			background-color: #c0bbc2;
+			color: black;
+			padding: 1px 3px;
+		}
+
+		#botao {
+			padding-top: 7px;
+		}
+
+		#inome {
+			margin-left: 8px;
+			margin-bottom: 3px;
+		}
+
+
+	</style>
+	<title>form002</title>
+</head>
+<body>
+	<h1>ACESSE JÁ</h1>
+	<form action="sla.php" autocomplete="off" method="post">
+		<p>
+			<label for="inome">Nome:</label>
+			<input type="text" name="nome" id="inome" placeholder="usuario" required minlength="3" maxlength="8" size="8" >
+		</p>
+		<p>
+			<label for="isenha">Senha:</label>
+			<input type="password" name="senha" id="isenha" placeholder="password" maxlength="10" minlength="5" required size="10">
+		</p>
+		<p id="botao">
+			<input type="submit" value="Entrar">
+			<input type="reset" name="">
+		</p>
+	</form>
+</body>
+</html>

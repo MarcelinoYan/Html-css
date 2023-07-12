@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body {
+			font-family: monospace;
+		}
+
+		a {
+			color: skyblue;
+			text-decoration: none; /*remove o sublinado*/
+		}
+
+		a:visited { /*significa que marca de azul quais ja foram visitados*/
+			color: #1e70ff;
+		}
+
+		a:hover { /*ao passar com o mouse em cima, o link fica sublinhado*/
+			text-decoration: underline;
+		}
+
+		a:active { /*ao clicar no link, ele fica preto mostrando que esta sendo precionado*/
+			color: black;
+		}
+
+		a::before /*significa antes, aki como antes de todos os links*/{
+			content: '°';
+		}
+
+		a::after /*siginifica depois, aki esta como depois de todos os links */{
+			content: '[link]'; /*Conteudo*/
+			color: black;
+			font-size: 0.70em;
+		}
+
+	</style>
+	<title>links</title>
+</head>
+<body>
+	<h1>Links</h1>
+	<ul>
+		<li>
+			<a href="http://tplitapevi.atacadao.com.br/" target="_blank" rel="external">TplWeb</a>
+		</li>
+		<li>
+			<a href="https://srvuca151/vue" target="_blank" rel="external">Rub</a>
+		</li>
+		<li>
+			<a href="https://srvapp151.br-atacadao.corp/sadou059/execute.do" target="_blank" rel="external">SaveWeb</a>
+		</li>
+	</ul>
+</body>
+</html>

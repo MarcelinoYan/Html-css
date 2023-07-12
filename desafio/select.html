@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form action="php/cadastro.php" method="post" autocomplete="on">
+		<p>
+			<label for="">Profissoes:</label>
+			<select>
+				<option>----- Escolha -----</option>
+				<optgroup label="Tecnologia">
+						<option value="ti">Tecnico de informatica</option>
+						<option value="dev">Programador</option>
+				</optgroup>
+				<optgroup label="Saúde">
+						<option value="md">Medico</option>
+						<option value="enf">Enfermeiro</option>
+				</optgroup>
+			</select>
+		</p>
+		<p>
+			<label for="iset">Setores:</label>
+			<input type="text" name="set" id="iset" list="opt" placeholder="Digite seu setor aki">
+			<datalist id="opt">
+				<option>Gerencia</option>				<option>Frente de caixa</option>
+			</datalist>
+		</p>
+		<p>
+			<label for="imsg">Mensagem:</label><br>
+			<textarea name="msg" id="imsg" cols="20" rows="5"></textarea>
+		</p>
+		<p>
+			<input type="submit" value="Enviar">
+		</p>
+	</form>
+</body>
+</html>

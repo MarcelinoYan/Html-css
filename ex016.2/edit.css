@@ -1,0 +1,33 @@
+@chatset "utf-8";
+
+*{
+	font-family: arial, helvetica, sans-serif;/*config global para que todas as palavras sejam em arial*/
+}
+
+body { background-image: linear-gradient(to right, #026E81,#00ABBD);/*cor de fundo em degrade*/
+
+}
+
+main {
+	background-color: white; /*cor de fundo*/
+	border-radius: 10px; /*curva a borda*/
+	box-shadow: 5px 5px 15px #A1C7E0; /*sombras no main*/
+	width: 600px;/*tamanho do main*/
+	padding: 10px;/*espaço entre a borda e os paragrafos, titulos etc..*/
+	margin: auto;/*main fica centralizado*/
+}
+
+h1 {
+	color: #0099DD;/*cor da letra */
+	text-align: center;/*texto centralizado*/
+	text-shadow: 1px 1px 2px #0099DD;/*sombras no texto*/
+}
+
+h2 {
+	color: #FF9933;/*cor da letra*/
+}
+
+p {
+	text-align: justify;/*texto mais organizado*/
+}
+

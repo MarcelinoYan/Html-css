@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body {
+			font-family: monospace;
+		}
+
+		div > p /*simbolo div > p significa um paragrafo que esta dentro da div */{
+
+			display: none; /*não mostre nada, nao mostra o p que esta na div*/
+		}
+
+		div:hover > p { /*o p  que esta na div ao passar o dedo por cima da div, ele aparecera*/
+			display: block; /*mostra o p que esta na div*/
+			color: white;
+			background-color: red;
+			width: 150px;
+			text-align: center;
+		}
+
+		div:hover {
+			color: red;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<h1>exemplo de hover</h1>
+		<p>Passe o mouse sobre o texto abaixo</p>
+		<div>
+			passe o mouse aqui
+			<p>Texto escondido</p>
+		</div>
+		<p>fim</p>
+
+</body>
+</html>

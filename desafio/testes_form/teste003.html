@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form 03</title>
+	<link rel="shortcut icon" type="image/x-ico" href="#">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form action="sla.php" autocomplete="off" method="post" >
+		<img src="imagens/usuario2.png" >
+			<p id="pnome">
+				<label for="inome">Nome:</label>
+				<input type="text" name="nome" id="inome" maxlength="8" minlength="3" placeholder="Usuario" size="8" required>
+			</p>
+			<p id="psenha">
+				<label for="isenha">Senha:</label>
+				<input type="password" name="senha" id="isenha" maxlength="10" minlength="5" placeholder="password" size="8" required>
+			</p>
+			<p id="esqueci">
+				<a href="#" target="_blank">Esqueci a senha</a>
+				<a href="#" target="_blank">Cadastrar</a>
+			</p>
+			<p id="botoes">
+				<input type="submit" value="Logar">
+			</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/celular.css" media="screen and (max-width: 768px)">
+    <title>Login</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div  id="container">
+    <form action="login.php" method="POST" autocomplete="off">
+        <h1>Login</h1>
+           <label for="username">Usuario:</label>
+           <input type="text" id="username" name="username" required maxlength="15" minlength="3"><br>
+
+           <label for="password">Senha:</label>
+           <input type="password" id="password" name="password" required minlength="3"><br>
+
+              <?php if (isset($_GET['error']) && $_GET['error'] === '1'): ?>
+               <p class="error-message"></p>
+               <?php endif; ?>
+
+           <input id="botaologin" type="submit" value="Login">
+    </form>
+    </div>
+        <div id="img">
+    </div>
+</body>
+</html>

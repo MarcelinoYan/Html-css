@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario check e radio</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			background-color: #000000;
+			width: 100vw;
+			height: 100vh;
+			position: relative;
+		}
+
+		form {
+			box-shadow: inset 1px 1px 1px 1px black;
+			background-color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			border: 1px solid black;
+			padding: 10px;
+			border-radius: 10px;
+
+		}
+
+		fieldset {
+			padding: 10px;
+			margin: 5px 0px;
+			width: 200px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<form action="php/casdastro.php" method="post" >
+		<h1>Atualização de casdastro 2023</h1>
+		<fieldset>
+			<legend>Sexo</legend>
+			<p>
+				<input type="radio" name="sexo" id="imas" value="M">
+				<label for="imas">Masculino</label> <br>
+				<input type="radio" name="sexo" id="ifem" value="F">
+				<label for="ifem">Feminino</label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Esporte preferido</legend>
+			<p>
+				<input type="checkbox" name="basq" id="ibasq">
+				<label for="ibasq">Basquete</label> <br>
+				<input type="checkbox" name="fut" id="ifut" checked>
+				<label for="ifut">Futebol</label> <br>
+				<input type="checkbox" name="surf" id="isurf">
+				<label for="isurf">Surf</label>
+			</p>
+		</fieldset>
+			<p>
+				<input type="submit" value="Enviar">
+				<input type="reset" name="">
+			</p>
+	</form>
+
+</body>
+</html>

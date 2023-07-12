@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+	font-family: monospace;
+}
+
+body {
+	background-image: linear-gradient(to bottom, #034159,#025951,#02735E,#038C3E,#0CF25D);
+	background-attachment: fixed;
+}
+
+h1#principal {
+	background-color: ;
+	font-size: 3em;
+	color: white;
+	text-align: center;
+}
+
+.secundario {	
+	background-color: white;
+	border-radius: 20px;
+	width: 120px;
+	padding: 5px;
+}
+
+p {
+	text-align: justify;
+	color: white;
+}

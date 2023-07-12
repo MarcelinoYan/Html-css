@@ -1,0 +1,41 @@
+@chaset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+		* {			
+			font-family: 'Ubuntu Mono', monospace;
+			font-size: 1em;
+			text-align: justify;
+		}
+
+		body {
+			background-image: linear-gradient(to bottom, #03A696,#04BF9D);
+			background-attachment: fixed;
+
+
+		}
+
+		main {
+			font-style: italic;
+			background-color:#253659;
+			border-radius: 5px;
+			padding: 20px;
+			margin: auto;
+
+		}
+
+		h1 {
+			text-decoration: underline;
+			color: #BF665E;
+			text-align: center;
+			font-weight: bolder;
+			font-size: 2.20em;
+		}
+
+		p {
+			color: #F27457;
+			font-size: 0.90em;
+		}
+
+		a {
+			color: white;
+		}
